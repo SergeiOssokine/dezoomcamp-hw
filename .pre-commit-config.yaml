@@ -1,0 +1,47 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-merge-conflict # prevent committing files with merge conflicts
+      - id: check-added-large-files
+        args:
+          - '--maxkb=5000' # don't add anything > 5MB
+      - id: check-yaml
+      - id: trailing-whitespace
+      - id: debug-statements
+        language_version: python3
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        language_version: python3
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1
+    hooks:
+      - id: isort # sort imports alphabetically and separates import into sections
+        name: Sorting imports with isort
+        args:
+          - "--profile=black"
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.8.5
+    hooks:
+      - id: nbqa-black
+      - id: nbqa-pyupgrade
+        args: ["--py37-plus"]
+      - id: nbqa-isort
+        args: ["--float-to-top", "--profile=black"]
+
+  - repo: https://github.com/sqlfluff/sqlfluff
+    rev: 3.3.0
+    hooks:
+      - id: sqlfluff-lint
+        args: [--dialect, "postgres"]
+        # For dbt projects, this installs the dbt "extras".
+        # You will need to select the relevant dbt adapter for your dialect
+        # (https://docs.getdbt.com/docs/available-adapters):
+        # additional_dependencies: ['<dbt-adapter>', 'sqlfluff-templater-dbt']
+      - id: sqlfluff-fix
+        args: [--dialect, "postgres"]
+        # Arbitrary arguments to show an example
+        # args: [--rules, "LT02,CP02"]
+        # additional_dependencies: ['<dbt-adapter>', 'sqlfluff-templater-dbt']

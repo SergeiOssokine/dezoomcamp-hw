@@ -1,0 +1,3 @@
+This folder contains scripts to solve homework for week 1 of the Data Engineering Zoomcamp for the 2025 cohort. For the actual questions, look [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2025/02-workflow-orchestration/homework.md)
+
+Before running the `run_homework.sh` script make sure that you have executed the backfill functionality of Kestra using the flow found [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/02-workflow-orchestration/flows/06_gcp_taxi_scheduled.yaml), for at least the year 2020 for green and yellow data and 2021 until July for Yellow data. Also make sure that you set the name of the dataset on BigQuery to be `dezoomcampnyc`.

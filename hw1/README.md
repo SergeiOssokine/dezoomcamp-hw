@@ -1,5 +1,5 @@
 
-This folder contains scripts to solve homework for week 1 of the Data Engineering Zoomcamp for the 2025 cohort. For the actual questions, look [here]()
+This folder contains scripts to solve homework for week 1 of the Data Engineering Zoomcamp for the 2025 cohort. For the actual questions, look [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2025/01-docker-terraform/homework.md)
 
 You will need both docker and docker-compose to do this. Don't forget to add yourself to the docker group so that you don't have to run things with sudo. You will also need to have the appropriate python packages. See the `setup` folder one level up.
 

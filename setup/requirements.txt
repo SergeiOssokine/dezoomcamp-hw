@@ -6,4 +6,6 @@ pre-commit
 pyarrow
 requests
 sqlalchemy
+sqlalchemy-utils
+psycopg2-binary
 typer

@@ -1,0 +1,9 @@
+db-dtypes
+google-cloud-storage
+numpy
+pandas
+pre-commit
+pyarrow
+requests
+sqlalchemy
+typer

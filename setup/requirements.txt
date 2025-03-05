@@ -2,11 +2,15 @@ db-dtypes
 dlt[bigquery]
 dlt[duckdb]
 google-cloud-storage
+googleapis-common-protos
+grpcio
+grpcio-status
 ipykernel
 numpy
 pandas
 pre-commit
 psycopg2-binary
+py4j
 pyarrow
 requests
 sqlalchemy

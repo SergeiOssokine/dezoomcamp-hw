@@ -6,6 +6,7 @@ You will need both docker and docker-compose to do this. You also need to run
 
 ```bash
 export DEZOOMCAMP_HOME=/path/to/zoomcamp/repo
+bash fetch_data.sh
 ```
 
 To run the homework, do
